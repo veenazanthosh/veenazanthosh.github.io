@@ -1,556 +1,284 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <script>
+        if (localStorage.getItem("theme") === "dark")
+            document.documentElement.classList.add("dark-theme");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velixo - High-End Creative Architect</title>
+    <meta name="description" content="Premium portfolio of Alex Sterling, an Elite Design Systems Architect." />
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 
-    <!-- Metas -->
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
-    <!-- Title  -->
-    <title> | VEENA |  </title>
-    <link rel="icon" id="icon" href="./assets/emoji.png" /> 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="./common/css/plugins.css">
-
-
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="./common/css/common_style.css">
-    <link rel="stylesheet" href="./assets/css/home6-style.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <link rel="stylesheet" href="./assets/css/custombutton.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-   
-   
+    <!-- CSS LIBRARIES -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/google-fonts.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 
-<body style="cursor: crosshair; background-color: white;">
+<body>
+    <!-- START NAVIGATION DOCK -->
+    <div class="nav-container animate__animated animate__fadeInUp">
+        <nav class="nav-dock">
+            <a href="index.html" class="dock-item active">
+          <i class="fa-solid fa-house-user"></i>
+          <span>Home</span>
+        </a>
+            <a href="resume.html" class="dock-item">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span>Resume</span>
+        </a>
+            <a href="works.html" class="dock-item">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Projects</span>
+        </a>
+            <a href="blog.html" class="dock-item">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Feed</span>
+        </a>
+            <a href="contact.html" class="dock-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        </nav>
+    </div>
+    <!-- END NAVIGATION DOCK -->
 
-
-
-    <!-- ==================== Start Loading ==================== -->
-
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>L</span>
-                <span>e</span>
-                <span>t</span>
-                <span>'</span>
-                <span>s</span>
-                <span> </span>
-                <span>g</span>
-                <span>o</span>
+    <div class="container bento-container">
+        <!-- START HEADER -->
+        <header class="d-flex justify-content-between align-items-center mb-5 animate__animated animate__fadeInDown">
+            <div class="logo-text">Velixo.</div>
+            <div class="controls d-flex gap-3">
+                <div class="control-btn dark-toggle" id="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
             </div>
-            
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START HERO SECTION -->
+        <div class="bento-card card-hero wow animate__fadeInLeft">
+            <span class="card-number">01 / CONCEPT</span>
+            <div class="badge-status">
+                <i class="fa-solid fa-circle"></i> Available for elite projects
+            </div>
+            <h1 class="hero-title">
+                ENGINEERING<br /><span>THE FUTURE</span><br />OF BRANDS.
+            </h1>
+            <p class="hero-desc">
+                I build high-performance digital ecosystems that merge technical complexity with artistic vision.
+            </p>
         </div>
-    </div>
+        <!-- END HERO SECTION -->
 
-    <!-- ==================== End Loading ==================== -->
-
-
-    <div class="cursor"></div>
-
-
-    <!-- ==================== Start progress-scroll-button ==================== -->
-
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-    <!-- ==================== End progress-scroll-button ==================== -->
-
-
-
-    <div id="smooth-wrapper">
-
-
-        <div id="smooth-content">
-
-            <main>
-<!-- ==================== Start marquee ==================== -->
-
-<div class="marq-mp ontop">
-    <div class="main-marq gray-bg shadow-off">
-        <div class="slide-har st1">
-            <div class="box">
-                <div class="item">
-                    <h5>Balancing life like a trial balance</h5>
-                </div>
-                <div class="item">
-                    <h5>Debit my laziness, credit my effort</h5>
-                </div>
-                <div class="item">
-                    <h5>Born to audit, forced to study</h5>
-                </div>
-                <div class="item">
-                    <h5>Profit and loss? More like pass and fail</h5>
-                </div>
-                <div class="item">
-                    <h5> sleep is a current asset</h5>
-                </div>
-                <div class="item">
-                    <h5>Doing accounts, but not for my life</h5>
-                </div>
-                <div class="item">
-                    <h5>Cash flow? I only have cash go</h5>
-                </div>
-                <div class="item">
-                    <h5>My calculator knows all my secrets</h5>
-                </div>
+        <!-- START PROFILE SECTION -->
+        <div class="bento-card card-profile wow animate__fadeInRight">
+            <span class="card-number">02 / IDENTITY</span>
+            <div class="avatar-box">
+                <img src="../assets/img/avatar-1.jpg" alt="Alex Sterling" />
             </div>
-            
-            <div class="box">
-                <div class="item">
-                    <h5>B.Com: 10% Study, 90% Group Work</h5>
-                </div>
-                <div class="item">
-                    <h5>Half Accountant, Half Procrastinator</h5>
-                </div>
-                <div class="item">
-                    <h5>When in Doubt, Adjust the Balance</h5>
-                </div>
-                <div class="item">
-                    <h5>I Didn’t Spend It, I Just Recorded It Wrong</h5>
-                </div>
-                <div class="item">
-                    <h5>Juniors Make Notes, Seniors Copy Them</h5>
-                </div>
-                <div class="item">
-                    <h5>Study Accounts to Avoid Bank Accounts Going Empty...</h5>
-                </div>
+            <h3 class="mb-1 text-uppercase">Alex Sterling</h3>
+            <p class="text-muted small fw-bold text-uppercase">
+                Elite Design Systems Architect
+            </p>
+
+            <div class="social-pill">
+                <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i
+          ></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-dribbble"></i
+          ></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
             </div>
-            
         </div>
-    </div>
-    <div class="main-marq color-bg shadow-off">
-        <div class="slide-har st2">
-            <div class="box">
-                <div class="item">
-                    <h5>Balancing life like a trial balance</h5>
+        <!-- END PROFILE SECTION -->
+
+        <!-- START ABOUT SECTION -->
+        <div class="bento-card card-about wow animate__fadeInUp">
+            <span class="card-number">03 / LOGIC</span>
+            <h2 class="text-uppercase">Elite<br />Philosophy.</h2>
+            <p class="text-muted small mb-4">
+                Bridging the gap between cutting-edge engineering and premium aesthetics for global industry leaders.
+            </p>
+
+            <div class="pillar-grid">
+                <div class="pillar-item">
+                    <div class="pillar-title">Scalable Systems</div>
+                    <p class="pill-text">
+                        Modular architectures built for massive growth.
+                    </p>
                 </div>
-                <div class="item">
-                    <h5>Debit my laziness, credit my effort</h5>
+                <div class="pillar-item">
+                    <div class="pillar-title">Visual Logic</div>
+                    <p class="pill-text">
+                        Where functional precision meets artistic soul.
+                    </p>
                 </div>
-                <div class="item">
-                    <h5>Born to audit, forced to study</h5>
+                <div class="pillar-item">
+                    <div class="pillar-title">Rapid Scale</div>
+                    <p class="pill-text">Concept to enterprise deployment in weeks.</p>
                 </div>
-                <div class="item">
-                    <h5>Profit and loss? More like pass and fail</h5>
-                </div>
-                <div class="item">
-                    <h5> sleep is a current asset</h5>
-                </div>
-                <div class="item">
-                    <h5>Doing accounts, but not for my life</h5>
-                </div>
-                <div class="item">
-                    <h5>Cash flow? I only have cash go</h5>
-                </div>
-                <div class="item">
-                    <h5>My calculator knows all my secrets</h5>
-                </div>
-            </div>
-            
-            <div class="box">
-                <div class="item">
-                    <h5>B.Com: 10% Study, 90% Group Work</h5>
-                </div>
-                <div class="item">
-                    <h5>Half Accountant, Half Procrastinator</h5>
-                </div>
-                <div class="item">
-                    <h5>When in Doubt, Adjust the Balance</h5>
-                </div>
-                <div class="item">
-                    <h5>I Didn’t Spend It, I Just Recorded It Wrong</h5>
-                </div>
-                <div class="item">
-                    <h5>Juniors Make Notes, Seniors Copy Them</h5>
-                </div>
-                <div class="item">
-                    <h5>Study Accounts to Avoid Bank Accounts Going Empty...</h5>
+                <div class="pillar-item">
+                    <div class="pillar-title">AI First</div>
+                    <p class="pill-text">
+                        Future-proofing ecosystems with neural logic.
+                    </p>
                 </div>
             </div>
-            
         </div>
-    </div>
-    
-</div>
+        <!-- END ABOUT SECTION -->
 
-<!-- ==================== End marquee ==================== -->
+        <!-- START STATS SECTION -->
+        <div class="bento-card card-skills wow animate__zoomIn" data-wow-delay="0.1s">
+            <span class="card-number">04 / STATS</span>
+            <div class="stat-item">
+                <span class="stat-num">12+</span>
+                <span class="stat-label d-block">Years Exp.</span>
+            </div>
+        </div>
+        <div class="bento-card card-skills wow animate__zoomIn" data-wow-delay="0.2s">
+            <span class="card-number">05 / STATS</span>
+            <div class="stat-item">
+                <span class="stat-num">42</span>
+                <span class="stat-label d-block">Elite Awards</span>
+            </div>
+        </div>
+        <!-- END STATS SECTION -->
 
+        <!-- START RESUME SECTION -->
+        <div class="bento-card card-resume wow animate__fadeInUp">
+            <span class="card-number">06 / JOURNEY</span>
+            <h3 class="text-uppercase mb-2">Elite Resume.</h3>
+            <p class="small mb-4">
+                Explore my technical mastery and professional evolution.
+            </p>
+            <div class="mt-auto">
+                <a href="resume.html" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-uppercase">
+            Explore Resume <i class="fa-solid fa-arrow-right-long ms-2"></i>
+          </a>
+            </div>
+        </div>
+        <!-- END RESUME SECTION -->
 
-                <!-- ==================== Start Header ==================== -->
+        <!-- START MISSION SECTION -->
+        <div class="bento-card card-hub wow animate__fadeInUp">
+            <span class="card-number">07 / PHILOSOPHY</span>
 
-                <header class="header-crv">
-                    <div class="container" style="height: 700px;">
-                        <div class="caption">
-                           
-                           <svg viewbox="0 0 100 20">
-                            <defs>
-                              <linearGradient id="gradient">
-                                <stop color="#000"/>
-                              </linearGradient>
-                              <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
-                                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                                  <animateTransform
-                                      attributeName="transform"
-                                      begin="0s"
-                                      dur="1.5s"
-                                      type="translate"
-                                      from="0,0"
-                                      to="40,0"
-                                      repeatCount="indefinite" />
-                                </path>
-                              </pattern>
-                            </defs>
-                            <text text-anchor="middle" x="50" y="15" font-size="20" fill="black" fill-opacity="0.1">VEENA</text>
-                            <text text-anchor="middle" x="50" y="15" font-size="20" fill="url(#wave)"  fill-opacity="1">VEENA</text>
-                          </svg>
-                        
-                            
-                        </div>
+            <div class="mission-header mb-4">
+                <h3 class="text-uppercase">Elite Mission.</h3>
+                <p class="small opacity-50 fw-bold">
+                    Defining the future of digital architecture
+                </p>
+            </div>
+
+            <div class="value-stack w-100">
+                <div class="value-item d-flex align-items-start gap-3 mb-4">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-chess-knight"></i>
                     </div>
-                    <!-- <div class="mimg fit-img">
-                        <img src="./assets/imgs/header/7.jpg" alt="" data-speed="0.6">
-                    </div> -->
-                </header>
-
-                <!-- ==================== End Header ==================== -->
-
-
-
-                <!-- ==================== Start Intro ==================== -->
-
-                <section class="intro-crv section-padding pb-0 wow fadeInUp slow" data-wow-delay="0.2s">
-                    <div class="container">
-                        <div class="sec-head mb-40">
-                            <div class="row">
-                                <div class="col-lg-5  md-mb50">
-                                   
-                                    <div class="img-shape">
-                                        <iframe src="https://lottie.host/embed/78147c4c-8fca-4fe4-a593-c30d01daed89/LfUgZaazPP.lottie"  
-                                        style="
-                                        width: 500px;
-                                        height: 500px;
-                                        "
-                                        ></iframe>    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">My name is Veena , An enthusiastic learner who believes progress comes from passion and perseverance.
-                                        I enjoy working on ideas that make a difference, no matter how small they seem.
-                                        <br><br>
-                                        With a foundation in business and tech, I aim to bridge the gap between data and decisions.Not just chasing goals, but creating stories worth telling!!!!
-                                        
-                                        </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-100 bord-thin-top pt-100">
-                           
-                            <div class="col-lg-6">
-                                <div class="skills pb-100">
-                                    <div class="sec-head">
-                                       
-                                            <h4 class="fz-40">Best Skills</h4>
-                                    
-                                    <div class="skills-box mt-60">
-
-                                        <div class="skill-item">
-                                            <h6 class="sub-title mb-15">Quick adaptability</h6>
-                                            <div class="skill-progress">
-                                                <div class="progres gray" data-value="85%"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="skill-item text-light">
-                                            <h6 class="sub-title mb-15"> Tech-savvy mindset </h6>
-                                            <div class="skill-progress">
-                                                <div class="progres dark" data-value="90%"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="skill-item">
-                                            <h6 class="sub-title mb-15">Team collaboration</h6>
-                                            <div class="skill-progress">
-                                                <div class="progres gray" data-value="80%" ></div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="skill-item">
-                                            <h6 class="sub-title mb-15">Innovative thinking</h6>
-                                            <div class="skill-progress">
-                                                <div class="progres color" data-value="75%"></div>
-                                            </div>
-                                        </div>
-                                        
-
-                                    </div>
-                                </div>
-                            </div> 
-                        </div><iframe src="https://lottie.host/embed/0373df03-447d-4de7-a896-3fe1c2d19b2d/vHo6O6Fkue.lottie"  
-                        style="
-                        width: 570px;
-                        height: 570px;
-                        "
-                        ></iframe> 
-                    </div>
-                </section>
-
-                <!-- ==================== End Intro ==================== -->
-
-
-<!-- ==================== Start marquee ==================== -->
-
-<div class="marq-mp ontop">
-    <div class="main-marq gray-bg shadow-off">
-        <div class="slide-har st1">
-            <div class="box">
-                <div class="item">
-                    <h5>Balancing life like a trial balance</h5>
-                </div>
-                <div class="item">
-                    <h5>Debit my laziness, credit my effort</h5>
-                </div>
-                <div class="item">
-                    <h5>Born to audit, forced to study</h5>
-                </div>
-                <div class="item">
-                    <h5>Profit and loss? More like pass and fail</h5>
-                </div>
-                <div class="item">
-                    <h5> sleep is a current asset</h5>
-                </div>
-                <div class="item">
-                    <h5>Doing accounts, but not for my life</h5>
-                </div>
-                <div class="item">
-                    <h5>Cash flow? I only have cash go</h5>
-                </div>
-                <div class="item">
-                    <h5>My calculator knows all my secrets</h5>
-                </div>
-            </div>
-            
-            <div class="box">
-                <div class="item">
-                    <h5>B.Com: 10% Study, 90% Group Work</h5>
-                </div>
-                <div class="item">
-                    <h5>Half Accountant, Half Procrastinator</h5>
-                </div>
-                <div class="item">
-                    <h5>When in Doubt, Adjust the Balance</h5>
-                </div>
-                <div class="item">
-                    <h5>I Didn’t Spend It, I Just Recorded It Wrong</h5>
-                </div>
-                <div class="item">
-                    <h5>Juniors Make Notes, Seniors Copy Them</h5>
-                </div>
-                <div class="item">
-                    <h5>Study Accounts to Avoid Bank Accounts Going Empty...</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main-marq color-bg shadow-off">
-        <div class="slide-har st2">
-            <div class="box">
-                <div class="item">
-                    <h5>Balancing life like a trial balance</h5>
-                </div>
-                <div class="item">
-                    <h5>Debit my laziness, credit my effort</h5>
-                </div>
-                <div class="item">
-                    <h5>Born to audit, forced to study</h5>
-                </div>
-                <div class="item">
-                    <h5>Profit and loss? More like pass and fail</h5>
-                </div>
-                <div class="item">
-                    <h5> sleep is a current asset</h5>
-                </div>
-                <div class="item">
-                    <h5>Doing accounts, but not for my life</h5>
-                </div>
-                <div class="item">
-                    <h5>Cash flow? I only have cash go</h5>
-                </div>
-                <div class="item">
-                    <h5>My calculator knows all my secrets</h5>
-                </div>
-            </div>
-            
-            <div class="box">
-                <div class="item">
-                    <h5>B.Com: 10% Study, 90% Group Work</h5>
-                </div>
-                <div class="item">
-                    <h5>Half Accountant, Half Procrastinator</h5>
-                </div>
-                <div class="item">
-                    <h5>When in Doubt, Adjust the Balance</h5>
-                </div>
-                <div class="item">
-                    <h5>I Didn’t Spend It, I Just Recorded It Wrong</h5>
-                </div>
-                <div class="item">
-                    <h5>Juniors Make Notes, Seniors Copy Them</h5>
-                </div>
-                <div class="item">
-                    <h5>Study Accounts to Avoid Bank Accounts Going Empty...</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-<!-- ==================== End marquee ==================== -->
-
-
-
-                
-
-
-
-
-
-
-              
-
-            </main>
-
-
-            <!-- ==================== Start Footer ==================== -->
-
-            <footer class="footer-sa bord-thin-top-light pb-80" style="background-color:crimson;">
-                <div class="container section-padding">
-                    
-                    <div class="sec-head mb-80">
-                        
-                        <div class="row">
-                           
-                            <div class="col-lg-6">
-                                
-                                <h4>B.Com by degree, 
-                                    <span class="sub-color inline">problem-solver by default.</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div><a target="_blank" href="../veena.resume.pdf">
-                       
-<button >
-    <span id="bold" >Resume</span>
-  </button>
-                    </a>
-                    <div class="contact-info">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-5">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="item">
-                                            <span id="bold" class="sub-color">location</span>
-                                            <p>Kerala,India </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex justify-content-end justify-end">
-                                        <div class="item">
-                                            <span id="bold" class="sub-color">inquiry</span>
-                                            <p>veenazanthosh@gamil.com</p>
-                                            <p>+91 9746083905</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-5">
-                                <div class="social-icon">
-                                   
-                                    <a href="https://github.com/veenazanthosh" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-
-                                    <a href="https://www.linkedin.com/in/veena-s-479631377/" target="_blank">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-
-
-                        
-
-                                  
-                                    
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <div class="value-title">STRATEGIC DEPTH</div>
+                        <p class="small opacity-60 mb-0">
+                            Every pixel is backed by rigorous architectural logic.
+                        </p>
                     </div>
                 </div>
-                <div class="sub-footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="copy sub-color md-mb50">
-                                    <p>© 2025 Made with love <a href="https://forzayt.github.io"> FORZA</a>. All Right Reserved</p>
-                                </div>
-                            </div>
-                            
-                        </div>
+
+                <div class="value-item d-flex align-items-start gap-3 mb-4">
+                    <div class="value-icon"><i class="fa-solid fa-vial"></i></div>
+                    <div>
+                        <div class="value-title">RADICAL QUALITY</div>
+                        <p class="small opacity-60 mb-0">
+                            Zero compromise on performance and visual fidelity.
+                        </p>
                     </div>
                 </div>
-            </footer>
 
-            <!-- ==================== End Footer ==================== -->
+                <div class="value-item d-flex align-items-start gap-3">
+                    <div class="value-icon"><i class="fa-solid fa-infinity"></i></div>
+                    <div>
+                        <div class="value-title">SCALABLE FUTURE</div>
+                        <p class="small opacity-60 mb-0">
+                            Systems designed to evolve as your brand expands.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="hub-footer mt-auto w-100">
+                <div class="signature-text">VELIXO x 2026</div>
+            </div>
         </div>
+        <!-- END MISSION SECTION -->
 
+        <!-- START SERVICES SECTION -->
+        <div class="bento-card card-services wow animate__fadeInUp">
+            <span class="card-number">08 / MASTERY</span>
+            <h3 class="text-uppercase mb-4">Core Mastery.</h3>
+            <div class="expertise-list">
+                <div class="expertise-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <span class="fw-bold text-uppercase">Systems Architecture</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span class="fw-bold text-uppercase">Secure Engineering</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span class="fw-bold text-uppercase">Strategic Growth</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <span class="fw-bold text-uppercase">AI Neuro-Design</span>
+                </div>
+            </div>
+        </div>
+        <!-- END SERVICES SECTION -->
+
+        <!-- START CLIENTS SECTION -->
+        <div class="bento-card card-clients wow animate__fadeInUp">
+            <span class="card-number">09 / NETWORK</span>
+            <p class="small text-uppercase fw-black opacity-30 mb-5">
+                Strategic Global Partners
+            </p>
+            <div class="client-grid">
+                <div class="client-item">
+                    <img src="../assets/img/logo-ipsum-1.png" class="client-logo" alt="Partner 1" />
+                </div>
+                <div class="client-item">
+                    <img src="../assets/img/logo-ipsum-2.png" class="client-logo" alt="Partner 2" />
+                </div>
+                <div class="client-item">
+                    <img src="../assets/img/logo-ipsum-3.png" class="client-logo" alt="Partner 3" />
+                </div>
+                <div class="client-item">
+                    <img src="../assets/img/logo-ipsum-4.png" class="client-logo" alt="Partner 4" />
+                </div>
+                <div class="client-item">
+                    <img src="../assets/img/logo-ipsum-5.png" class="client-logo" alt="Partner 5" />
+                </div>
+            </div>
+        </div>
+        <!-- END CLIENTS SECTION -->
+
+        <!-- START FOOTER -->
+        <footer class="card-footer">
+            <p class="small opacity-50 fw-bold">
+                © 2026 All Rights Reserved by CodeIn Solutions.
+            </p>
+        </footer>
+        <!-- END FOOTER -->
     </div>
 
-
-
-
-
-
-
-
-
-
-    <!-- jQuery -->
-    <script src="./common/js/lib/jquery-3.6.0.min.js"></script>
-    <script src="./common/js/lib/jquery-migrate-3.4.0.min.js"></script>
-
-    <!-- plugins -->
-    <script src="./common/js/lib/plugins.js"></script>
-
-    <!-- GSAP -->
-    <script src="./common/js/gsap_lib/gsap.min.js"></script>
-    <script src="./common/js/gsap_lib/ScrollSmoother.min.js"></script>
-    <script src="./common/js/gsap_lib/ScrollTrigger.min.js"></script>
-    <script src="./common/js/gsap_lib/SplitText.min.js"></script>
-    <script src="./common/js/gsap_lib/matter.js"></script>
-    <script src="./common/js/gsap_lib/throwable.js"></script>
-
-    <!-- common scripts -->
-    <script src="./common/js/common_scripts.js"></script>
-
-    <!-- custom scripts -->
-    <script src="./assets/js/scripts.js"></script>
-    
-    
-
+    <!-- JS LIBRARIES -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
